@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M0_2 Control</title>
+<style type="text/css">
+.main {
+	float: none;
+	height: 424px;
+	width: 424px;
+	background-image:url();
+	background-repeat: no-repeat;
+}
+.strip {
+	height: 28px;
+	width: 200px;
+	margin-top: 55px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+}
+.strip1 {
+	height: 28px;
+	width: auto;
+	float:inherit;
+}
+.strip2 {
+	height: 30px;
+	width: 275px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+	
+}
+.strip3 {
+	height: 60px;
+	width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 100px;
+	
+}
+.clear{ clear: both; height:0; font-size:1px; line-height:0px;}
+</style>
+</head>
+
+<body>
+<body background="./images/huaqing002.jpg">
+<table width="600" border="0" height="160" align="center" background="./images/huaqing7.jpg">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="600" border="0" align="center">
+  <tr>
+    <td width="294"><div align="center">M0</div></td>
+    <td width="296"><div align="center"><a href="main2.html">回主页</a></div></td>
+  </tr>
+</table>
+<table width="600" height="290" align="center" border="0">
+<tr><td height="60"><div align="center"><form id="form1" name="form1" method="post" action="cgi-bin/m0_led.cgi">
+          <div class="strip1">
+            <input type="hidden" name="store" id="hiddenField" value="2" />
+            Led:
+         
+              <label>
+                <input type="radio" name="led" value="1" id="led_0" />
+                on</label>
+             
+              <label>
+                <input type="radio" name="led" value="0" id="led_1" />
+                off</label>
+              
+            
+              <input type="submit" name="button" id="button" value="确定" />
+          </div>
+        </form></div></td></tr>
+<tr><td height="60"><div align="center"><form id="form4" name="form4" method="post" action="cgi-bin/m0_beep.cgi"> <input type="hidden" name="store" id="hiddenField" value="2"/>
+          
+            <label>Beep:
+              <input type="radio" name="beep" value="1" id="beep_0" />
+              开</label>
+            
+            <label>
+              <input type="radio" name="beep" value="0" id="beep_1" />
+              关</label>
+                
+            <input type="submit" name="button4" id="button4" value="提交" />
+        </form></div></td></tr>
+<tr><td height="60"><div align="center"><form id="form3" name="form3" method="post" action="cgi-bin/m0_seg.cgi">
+          <div class="strip1"> <input type="hidden" name="store" id="hiddenField"  value="2"/>
+           
+              <label>Seg:
+                <input type="radio" name="seg" value="1" id="seg_0" />
+              on</label>
+             
+              <label>
+                <input type="radio" name="seg" value="0" id="seg_1" />
+                off</label>
+             
+           
+              <input type="text" name="segvalue" id="textfield"  size="2"/>
+              <input type="submit" name="button3" id="button3" value="提交" />
+          </div>
+        </form></div></td></tr>
+<tr><td height="60"><div align="center"><form id="form2" name="form2" method="post" action="cgi-bin/m0_fan.cgi">
+          <div class="strip1"> <input type="hidden" name="store" id="hiddenField" value="2" />
+          Fan:
+           
+              <label>
+                <input type="radio" name="fan" value="0" id="fan_0" />
+                off</label>
+              
+              <label>
+                <input type="radio" name="fan" value="1" id="fan_1" />
+                1</label>
+            
+              <label>
+                <input type="radio" name="fan" value="2" id="fan_2" />
+                2</label>
+              
+              <label>
+                <input type="radio" name="fan" value="3" id="fan_3" />
+                3</label>
+          
+         
+              <input type="submit" name="button2" id="button2" value="确定" />
+          </div>
+        </form></div></td></tr>
+<tr>
+  <td height="100"><div align="left">基于ARM Cortex-M0内核的LPC11C14，低功耗、低成本、丰富的外设资源。此处理器带有SWD调试功能的50MHz Cortex-M0控制器、32个可嵌套向量中断、4个优先级、最多13个拥有专用中断的GPIO、带片上CANopen驱动器的CAN 2.0B的CAN控制器、具备脉宽调制/匹配/捕捉功能的2个16位和2个32位计时器，1个24位系统计时器、32KB内部Flash、8KB内部RAM。</div></td></tr>
+</table>
+</body>
+</html>

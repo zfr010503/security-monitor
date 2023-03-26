@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>仓库二</title>
+<style type="text/css">
+@import url("layout.css");
+</style>
+</head>
+<body>
+<!--<div style="width:100%;height:100%;position:absolute;z-index:-1;top:0px;"> 
+<img src="images/huaqing00.jpg" width="100%" height="100%" >
+</div> -->
+<body background="./images/huaqing00.jpg">
+<div align="center">
+<table width="1045" border="0">
+    <tr>
+      <th width="250"  align="left" scope="col"><div align="center"><a href="cgi-bin/picture2.cgi" target="_blank"><b><h1><font color="#FF0000" size="+6">历史照片</font></h1></b></a></div></th>
+      <th width="248"  align="left" scope="col"> <div align="center"><a href="video2.html" target="_blank"><b><h1><font color="#FF0000" size="+6">实时监控</font></h1></b></a></div></th>
+      <th width="261"  align="left" scope="col"><div align="center"><a href="m0_2.html" target="_blank"><b><h1><font color="#FF0000" size="+6">M0控制</font></h1></b></a></div></th>
+      <th width="268" height="80" colspan="2"  align="left" scope="col"><div align="center"><a href="env2.html" target="_blank"><b><h1><font color="#FF0000" size="+6">环境信息</font></h1></b></a></div></th></tr></table></div>
+      
+<div align="center">
+	<table width="992" border="0">
+    <tr><th colspan="3" background=""><div align="left">物联网是新一代信息技术的重要组成部分。其英文名称是"The Internet of things"。顾名思义，"物联网就是物物相连的互联网"。这有两层意思：第一，物联网的核心和基础仍然是互联网，是在互联网基础上的延伸和扩展的网络；第二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信。因此，物联网的定义是通过射频识别（RFID）、红外感应器、全球定位系统、激光扫描器等信息传感设备，按约定的协议，把任何物品与互联网相连接，进行信息交换和通信，以实现对物品的智能化识别、定位、跟踪、监控和管理的一种网络。</div></th>
+      <th width="330" height="40" align="left" scope="col"><div align="center"><iframe scrolling="no" src="cgi-bin/sql2.cgi" width="330" height="170"></iframe>&nbsp;</div></th>
+    </tr>
+    <tr>
+      <th colspan="3" rowspan="3" background=""><div align="center"><table width="655" border="0"><form action="cgi-bin/setEnv.cgi" method="get"><input name="store" type="hidden" value="1" />
+      	<tr>
+          <th height="55"><div align="center">
+	            <label>最高温度:
+	              <input  type="text" name="temMAX" id="textfield"  width="50" maxlength="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='50' />
+                </label>
+	          </div></th>
+          <th><div align="center">
+	            <label>最高湿度:
+	              <input type="text" name="humMAX" id="textfield3" width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='50'/>
+                </label>
+	          </div></th>
+          <th><div align="center">
+	            <label>最高光度:
+	              <input type="text" name="illMAX" id="textfield5" width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='500'/>
+                </label>
+	          </div></th>
+         </tr>
+         <tr>
+          <th height="55"><div align="center">
+	            <label>最低温度:
+	              <input type="text" name="temMIN" id="textfield2"  width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='5'/>
+                </label>
+	          </div></th>
+          <th><div align="center">
+	            <label>最低湿度:
+	              <input type="text" name="humMIN" id="textfield4"  width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='10'/>
+                </label>
+	          </div></th>
+          <th><div align="center">
+	            <label>最低光度:
+	              <input type="text" name="illMIN" id="textfield6"  width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='10'/>
+                </label>
+	          </div></th>
+         </tr>
+         <tr>
+          <th height="50" colspan="3"><div align="center">
+	              <input type="reset" name="button7" style="background-color:transparent" id="button7" value="重置" />
+	              <input type="submit" name="button8" id="button8" value="提交"  style="background-color:transparent"/>
+                </div></th>
+          </tr>
+      </form>
+      </table></div></th>
+      <th height="40"><div class="blank" align="center">
+        <form action="cgi-bin/wifi.cgi" method="post" id="form6" name="form6">
+          <div class="strip" align="center">
+            <label>IP地   址:
+<input type="text" name="ip" id="ip" width="60" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='192.168.1.20' />
+              </label>
+            </div>
+          <div class="strip" align="center">
+            <label>网关地址:
+              <input type="text" name="gateway" id="gateway" width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='192.168.1.1'/>
+              </label>
+            </div>
+          <div class="strip" align="center">
+            <div align="center" >
+              <input type="submit" name="button7" id="button7" value="开启wifi"  style="background-color:transparent"/>
+              </div>
+            </div>
+          </form>
+</div></th>
+    </tr>
+    <tr>
+      <th height="40"><div align="center">报警短信设置</th>
+    </tr>
+    <tr>
+      <th height="61"><div class="blank" align="center">
+        <form action="cgi-bin/set_sms.cgi" method="post" id="form5" name="form5">
+          <div class="strip" align="center">
+            <label>接收号码:
+              <input type="text" name="center" id="center" width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='*' />
+              </label>
+            </div>
+          <div class="strip" align="center">
+            <label>中心号码:
+              <input type="text" name="to" id="to" width="50" size="10" style="height:10"height="10" onFocus="if(this.value=='*'){this.value='';}" value='13800100500'/>
+              </label>
+            </div>
+          <div class="strip" align="center">
+		   <input type="hidden" name="store" id="hiddenField"  value="2"/>
+            <div align="center" >
+              <input type="reset" name="button" id="button" value="重置" style="background-color:transparent" />
+              <input type="submit" name="button6" id="button6" value="提交"  style="background-color:transparent"/>
+              </div>
+            </div>
+          </form>
+</div></th>
+    </tr>
+    <tr>
+    <!--  <th colspan="4" rowspan="6" background="./images/huaqing100.jpg">&nbsp;</th>
+ <!--       <th colspan="1" rowspan="6" background="" align="left" width="100%"  height="100%"><img src="images/huaqing101.jpg"  /></th> -->
+     <!-- <th height="250"></th>-->
+      <th width="30"  align="left" scope="col"> <div ><h3><font color="#FF6633" size="+6">仓库选择</font></h3>
+      <a href="main1.html" target="_blank"> <li><h4>仓库一</h4></li></a>
+      <a href="main2.html" target="_blank">
+      <li><h4>仓库二</h4>
+      </li></a>
+      </div></th>
+    </tr>
+	</table></div>
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>请登录</title>
+</head>
+
+<body  >
+<body background="./images/huaqing002.jpg">
+<div align="center">
+  <table width="900" border="0" background="./images/huaqing3.jpg">
+    <tr>
+      <th width="385" height="80" scope="col">&nbsp;</th>
+      <th width="385" scope="col">&nbsp;</th>
+      <th width="70" scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td height="50">&nbsp;</td>
+      <td><div align="center"></div></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  </div>
+<div></div>
+<div align="center">
+<table width="900" border="0">
+  <tr><td>
+   <form  onsubmit="return isValidate(myform)" action="cgi-bin/login.cgi" method="post">
+    用户名: <input type="text" name="username" id="username" > 
+    密码: <input type="password" name="userpass" id="userpass"> 
+    <input type="submit" value="登录" id="button"  >
+		</form>
+
+        </td></tr>
+</table>
+        </div>
+
+
+<!--<p>&nbsp;</p>-->
+
+
+  <div align="center">
+    <table width="900" height="467" border="0" background="./images/huaqing4.jpg">
+      <tr>
+        <td width="126" height="248">&nbsp;</td>
+        <td width="351"></td>
+        <td width="101">&nbsp;</td>
+      </tr>
+      <tr>
+        
+        <td></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><form  name="myform" method="get" action="cgi-bin/login.cgi" onsubmit="return isValidate(myform)">
+        <div align="center">
+          <!--  <table width="100" border="1" bordercolor="#FF0000">
+              <tr>
+                <td><div align="center"><input type="submit" name="button" id="button" value="进入仓库" style=" font-size:20px;height:70px;width:100px; background:transparent;border:0;color:red" /></div></td>
+              </tr>
+            </table>
+          </div>
+          </form></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </table>
+     -->
+
+  </div>
+</body>
+</html>
+
+
+<!--
+<script language="javascript">
+function isValidate(form)
+{
+	username=form.username.value;
+	userpass=form.userpass.value;
+	if(username == "")
+	{	
+		alert("用户名不能为空,请输入两位以上用户名");
+		form.username.focus();
+		return false;
+	}
+	
+	if(!minLength(username,2))
+	{
+		alert("用户名长度小于2位！");
+		form.username.focus();
+		return false;
+	}
+
+	if(!maxLength(username,10))
+	{
+		alert("用户名长度大于10位！");
+		form.username.focus();
+		return false;
+	}
+	if(userpass == "")
+	{	
+		alert("密码不能为空");
+		form.userpass.focus();
+		return false;
+	}
+	if(!minLength(userpass,2))
+	{
+		alert("口令长度小于2位！");
+		form.userpass.focus();
+		return false;
+	}
+	if(!maxLength(userpass,20))
+	{
+		alert("口令长度大于20位！");
+		form.userpass.focus();
+		return false;
+	}
+	return true;
+	}
+	function minLength(str,length)
+	{
+		if(str.length>=length)
+			return true;	
+		else
+			return false;
+	}
+	function maxLength(str,length)
+	{
+		if(str.length<=length)
+			return true;
+		else 
+			return false;
+	}
+
+</script>
+-->
